@@ -102,7 +102,7 @@ int print_non_printable(va_list types, char buffer[],
  * @precision: Precision specification
  * @size: Size specifier
  * Return: Numbers of chars printed
- *
+ */
 
 int print_reverse(va_list types, char buffer[],
 	int flags, int width, int precision, int size)
@@ -124,9 +124,9 @@ int print_reverse(va_list types, char buffer[],
 		str = ")Null(";
 	}
 	for (i = 0; str[i]; i++)
-		
 		;
-	for (i =i - 1; i >= 0; i--)
+
+	for (i = i - 1; i >= 0; i--)
 	{
 		char z = str[i];
 
@@ -185,4 +185,4 @@ int print_rot13string(va_list types, char buffer[],
 		}
 	}
 	return (count);
-}	
+}
